@@ -1,0 +1,138 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: color #ffe3e3;;
+    
+}
+header {
+    
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+}
+header p{
+    color: #d44782;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size:35px;
+    padding: 2px;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    color: #3498db;
+}
+
+
+.toggle-content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-content.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#internship-details {
+    grid-column: 1;
+    background-color: #e6f2ff;
+}
+
+#project-description {
+    grid-column: 2;
+    background-color: #ffe6e6;
+}
+
+#skills-learned {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #ffffe6;
+}
+
+#challenges-faced {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #e6ffff;
+}
+
+#conclusion {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    background-color: #e7e4e1;
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .toggle-button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .shine-text {
+    text-shadow: 0 0 10px #d44782;
+    animation: shine 2s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      text-shadow: 0 0 10px #d44782;
+    }
+    50% {
+      text-shadow: 0 0 20px #d44782;
+    }
+    100% {
+      text-shadow: 0 0 10px #d44782;
+    }
+  }
+ 
+.link-text {
+        color: #ffffff;
+        text-shadow:
+          0 0 10px #ff0033,
+    
+         
+          0 0 40px #f052d0,
+          0 0 50px #ff00ff,
+       
+          0 0 70px #ff0066,
+          0 0 80px #ff0099;
+      }
+  
+  
+  
